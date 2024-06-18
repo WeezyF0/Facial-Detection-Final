@@ -5,7 +5,7 @@ def main():
     model = YOLO('yolov8n-face.pt')
 
     cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280) #edit the resolution based on your available webcam for ideal results. This is for 720p.
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
     if not cap.isOpened():
